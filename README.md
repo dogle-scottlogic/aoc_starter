@@ -16,6 +16,14 @@ This repository contains a starter framework for the Advent of Code programming 
 
 ## How to Run the Code
 
+## Quick Start
+
+1. Fork this repository.
+2. Ensure that you have the correct [requirements](#requirements) installed.
+3. From a bash terminal navigate to the [python](/python/) directory.
+4. Run `./run all`
+5. [Create a new day](#how-to-add-a-new-day) if required.
+
 ## Script Options
 
 The `scripts/run.sh` script provides several commands to manage the environment, install dependencies, run tests, and execute solutions. Usage:
