@@ -1,4 +1,4 @@
-"""Advent of Code 2026 - Day 01"""
+"""Advent of Code <YEAR> - Day <DAY>"""
 
 
 def part1(puzzle_input: str):
