@@ -7,8 +7,8 @@ This repository contains a starter framework for the Advent of Code programming 
 
 Currently supported languages are:
 
-* Python
-* TypeScript
+* [Python](#python)
+* [TypeScript](#typescript)
 
 ## Project Structure
 
