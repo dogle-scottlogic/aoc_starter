@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 
 if [ $# -ne 1 ]; then
@@ -30,7 +31,7 @@ fi
 # Create test file if it doesn't exist
 if [ ! -f "$TEST_PY" ]; then
   cp "$TEMPLATES_DIR/python/test_day_template.py" "$TEST_PY"
-  sed -i -e "s/day01/day$DAY_NUM/g" "$TEST_PY"
+  sed -i -e "s/<DAY>/$DAY_NUM/g" "$TEST_PY"
   echo "Created $TEST_PY"
 else
   echo "$TEST_PY already exists, skipping."

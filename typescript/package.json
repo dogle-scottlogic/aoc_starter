@@ -1,0 +1,50 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Advent of Code Starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint-fix": "npx eslint . --fix",
+    "lint": "npx eslint .",
+    "day": "bash scripts/run.sh",
+    "run-day": "nodemon src/app.ts",
+    "new-day": "bash scripts/new_day.sh"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dogle-scottlogic/aoc_starter.git"
+  },
+  "keywords": [
+    "Advent",
+    "Code",
+    "Starter"
+  ],
+  "author": "David Ogle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dogle-scottlogic/aoc_starter/issues"
+  },
+  "homepage": "https://github.com/dogle-scottlogic/aoc_starter#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.52.0",
+    "@typescript-eslint/parser": "^8.52.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "globals": "^17.0.0",
+    "jest": "^30.2.0",
+    "jiti": "^2.6.1",
+    "nodemon": "^3.1.11",
+    "prettier": "^3.7.4",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.52.0"
+  }
+}

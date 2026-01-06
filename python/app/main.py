@@ -49,13 +49,19 @@ def run_day(day: int, part: Optional[int], input_path: Optional[Path]) -> int:
 
 
 def main(argv=None) -> int:
-    p = argparse.ArgumentParser(prog="advent", description="Run Advent of Code day solutions")
+    p = argparse.ArgumentParser(
+        prog="advent", description="Run Advent of Code day solutions"
+    )
     p.add_argument("day", type=int, help="Day number to run (e.g. 1)")
     p.add_argument("--part", type=int, choices=[1, 2], help="Run only part 1 or 2")
-    p.add_argument("--input", type=str, help="Path to input file (defaults to inputs/dayXX.txt)")
+    p.add_argument(
+        "--input", type=str, help="Path to input file (defaults to inputs/dayXX.txt)"
+    )
     args = p.parse_args(argv)
 
-    input_path = Path(args.input) if args.input else Path("inputs") / f"day{args.day:02d}.txt"
+    input_path = (
+        Path(args.input) if args.input else Path("inputs") / f"day{args.day:02d}.txt"
+    )
     return run_day(args.day, args.part, input_path)
 
 

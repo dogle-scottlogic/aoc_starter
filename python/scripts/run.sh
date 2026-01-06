@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 set -euo pipefail
 
 USAGE="Usage: $0 {venv|install|test|day|all} \n\nCommands:\n  venv    Create the .venv (if missing) and activate it for the script run\n  install Create venv and install requirements from requirements.txt\n  test    Run pytest inside the venv (requires pytest installed in venv)\n  day     Run the app via python -m app.main\n  all     Do install, test, then run\n"
