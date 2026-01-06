@@ -12,14 +12,26 @@ Currently supported languages are:
 
 ## Project Structure
 
-* `app/` — Main application code
-  * `main.py` — Entry point (if needed)
-  * `days/` — Solutions for each day (e.g., `day01.py`, `day02.py`, ...)
-* `inputs/` — Input files for each day (e.g., `day01.txt`)
-* `tests/` — Unit tests for each day's solution
-* `scripts/` — Helper scripts (e.g., `run.sh`)
-* `requirements.txt` — Python dependencies
-* `pyproject.toml` — Project metadata
+The repository is organized to support multiple languages and make adding new Advent of Code days easy.
+
+aoc_starter/
+├─ .github/              # GitHub Actions workflows and configs
+├─ .vscode/              # Optional Visual Studio Code workspace settings
+├─ python/               # Python implementation AoC boilerplate
+│  ├─ app/               # Python app code (e.g., entry & utilities)
+│  |   ├─ days/          # Python puzzle solution modules (dayXX.py)
+│  ├─ inputs/            # Puzzle input files for Python
+│  ├─ scripts/           # Utility bash script files
+│  └─ tests/             # Pytest tests for Python solutions
+├─ templates/            # Templates used to scaffold new days
+├─ typescript/           # TypeScript implementation AoC boilerplate
+│  ├─ src/               # TypeScript source files (days & utils)
+│  |   ├─ days/          # TypeScript puzzle solution modules (dayXX.py)
+│  ├─ inputs/            # Puzzle input files for TypeScript
+│  └─ tests/             # Jest tests for TS solutions
+├─ .gitignore            # Git ignore rules
+├─ LICENSE               # MIT license
+└─ README.md             # Project overview and instructions
 
 ## How to Run the Code
 
