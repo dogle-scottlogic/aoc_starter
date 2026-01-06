@@ -14,6 +14,7 @@ Currently supported languages are:
 
 The repository is organized to support multiple languages and make adding new Advent of Code days easy.
 
+```ascii
 aoc_starter/
 ├─ .github/              # GitHub Actions workflows and configs
 ├─ .vscode/              # Optional Visual Studio Code workspace settings
@@ -32,6 +33,7 @@ aoc_starter/
 ├─ .gitignore            # Git ignore rules
 ├─ LICENSE               # MIT license
 └─ README.md             # Project overview and instructions
+```
 
 ## How to Run the Code
 
